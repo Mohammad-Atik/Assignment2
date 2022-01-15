@@ -6,11 +6,66 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* First-Section */
+
 .first-section {
   display: flex;
+  align-items: center;
 }
 
-.proudct-collection {
+.section-articles {
+  width: 582px;
+  height: 270px;
+  margin-left: 120px;
+  margin-right: 133px;
+}
+
+.section-articles h1 {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.first-button {
+  background-color: #e02c6d;
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 41px;
+  width: 196px;
+  height: 44px;
+}
+
+.section-element {
+  width: 440px;
+  height: 414px;
+  margin-right: 165px;
+}
+
+/* Product-Section */
+
+.product-collection {
+  width: 1047px;
+  height: 1662px;
+}
+
+.products-articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.product {
+  width: 329px;
+  height: 476px;
+}
+
+/* footer */
+
+footer {
+  width: 1440px;
+  height: 239px;
+  background-color: #0a0826;
+  color: #ffffff;
+}
+
+.footer-contents {
+  text-align: center;
 }
