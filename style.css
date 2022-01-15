@@ -1,12 +1,16 @@
 /* Font Styles */
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
   font-family: "Roboto", sans-serif;
+  overflow: none;
 }
 
 /* First-Section */
+header {
+  margin-top: 87px;
+  margin-left: 120px;
+}
 
 .first-section {
   display: flex;
@@ -41,20 +45,85 @@ body {
 }
 
 /* Product-Section */
+.proudct-collection {
+  margin-left: 135px;
+  margin-right: 135px;
+  margin-top: 150px;
+  margin-bottom: 5%;
+  background-color: #aaaaaa10;
+  border-radius: 5px;
+  padding-bottom: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
 
-.product-collection {
-  width: 1047px;
-  height: 1662px;
+.product-heading {
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .products-articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding-left: 5%;
 }
 
 .product {
-  width: 329px;
-  height: 476px;
+  align-content: center;
+  border-radius: 10px;
+}
+
+.extra-content {
+  margin-top: 20px;
+  text-align: end;
+  color: #e02c6d;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+span {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.fas {
+  color: #fb8200;
+}
+
+/* Final-Section */
+.final-section {
+  width: 1110px;
+  height: 270px;
+  margin-bottom: 25%;
+}
+
+.final-container {
+  display: flex;
+  align-items: center;
+}
+
+.final-section-articles h1 {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.second-button {
+  background-color: #e02c6d;
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 41px;
+  width: 196px;
+  height: 44px;
+}
+
+.final-section-element img {
+  width: 504px;
+  height: 270px;
+  margin-right: 96px;
+  margin-left: 205px;
 }
 
 /* footer */
@@ -67,5 +136,29 @@ footer {
 }
 
 .footer-contents {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+/* Mobile-View */
+@media only screen and (max-width: 688px) {
+  body {
+    width: 360px;
+    height: 6077px;
+    position: absolute;
+  }
+
+  .first-section {
+    flex-direction: column;
+  }
+
+  .products-articles {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .final-container {
+    flex-direction: column;
+  }
 }
